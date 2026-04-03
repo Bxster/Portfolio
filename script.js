@@ -105,7 +105,8 @@
         'Ingegnere Informatico',
         'Machine Learning & Deep Learning',
         'Generative AI & Computer Vision',
-        'Data Science & Big Data'
+        'Data Science & Big Data',
+        'AI Engineer' 
     ];
 
     let phraseIndex = 0;
