@@ -105,6 +105,7 @@
         'Ingegnere Informatico',
         'Machine Learning & Deep Learning',
         'Generative AI & Computer Vision',
+        'Edge AI & Sistemi Embedded',
         'Data Science & Big Data',
         'AI Engineer' 
     ];
