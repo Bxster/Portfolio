@@ -6,7 +6,7 @@
     <title>Gianluca Baldelli - Portfolio</title>
     <meta name="description" content="Portfolio di Gianluca Baldelli: Ingegnere Informatico orientato all'Intelligenza Artificiale, Machine Learning e Deep Learning.">
     <meta property="og:title" content="Gianluca Baldelli - Portfolio">
-    <meta property="og:description" content="Ingegnere Informatico orientato all'AI, con competenze in Machine Learning, Deep Learning e Generative AI.">
+    <meta property="og:description" content="Ingegnere Informatico orientato all'AI, con competenze in Machine Learning, Deep Learning, Generative AI e Computer Vision.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +87,7 @@
                     <div class="info-card reveal">
                         <i class="fas fa-language"></i>
                         <span class="info-label">LINGUE</span>
-                        <span class="info-value">IT 🇮🇹 · EN 🇬🇧 · ES 🇪🇸</span>
+                        <span class="info-value">IT madrelingua · EN B2 · ES A2</span>
                     </div>
                     <a href="https://www.univpm.it/" target="_blank" class="info-card reveal">
                         <i class="fas fa-university"></i>
@@ -138,7 +138,8 @@
                     <div class="softskill-tag reveal"><i class="fas fa-users"></i> Lavoro in team</div>
                     <div class="softskill-tag reveal"><i class="fas fa-comments"></i> Comunicazione efficace</div>
                     <div class="softskill-tag reveal"><i class="fas fa-bolt"></i> Prontezza decisionale</div>
-                    <div class="softskill-tag reveal"><i class="fas fa-balance-scale"></i> Capacità di mediazione</div>
+                    <div class="softskill-tag reveal"><i class="fas fa-balance-scale"></i> Capacità di mediazione e autorevolezza</div>
+                    <div class="softskill-tag reveal"><i class="fas fa-random"></i> Versatilità</div>
                     <div class="softskill-tag reveal"><i class="fas fa-lightbulb"></i> Curiosità e apprendimento continuo</div>
                 </div>
             </div>
@@ -190,7 +191,7 @@
                         <span class="skill-tag"><i class="fas fa-chart-bar"></i> Matplotlib</span>
                         <span class="skill-tag"><i class="fas fa-language"></i> spaCy</span>
                         <span class="skill-tag"><i class="fas fa-comment-dots"></i> Rasa</span>
-                        <span class="skill-tag"><i class="fas fa-eye"></i> YOLO</span>
+                        <span class="skill-tag"><i class="fas fa-eye"></i> YOLO (Ultralytics)</span>
                     </div>
                 </div>
 
@@ -228,6 +229,7 @@
                         <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
                         <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
                         <span class="skill-tag"><i class="fab fa-apple"></i> macOS</span>
+                        <span class="skill-tag"><i class="fab fa-microsoft"></i> Microsoft Office</span>
                     </div>
                 </div>
 
@@ -243,6 +245,7 @@
                         <span class="skill-tag"><i class="fas fa-tachometer-alt"></i> Qlik Sense</span>
                         <span class="skill-tag"><i class="fas fa-wallet"></i> MetaMask</span>
                         <span class="skill-tag"><i class="fas fa-microchip"></i> Sistemi Embedded</span>
+                        <span class="skill-tag"><i class="fas fa-bolt"></i> Edge AI (Hailo-8)</span>
                         <span class="skill-tag"><i class="fas fa-sliders-h"></i> Controllo PID</span>
                     </div>
                 </div>
@@ -259,10 +262,26 @@
 
             <div class="projects-grid">
                 <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-car"></i></div>
+                    <h3>Vision AI per Controllo Classe Ambientale Veicoli</h3>
+                    <p>Incarico esterno per New Generation Sensors. Pipeline edge AI su Raspberry Pi 5 + Hailo-8 + camera Sony IMX500 per rilevamento e tracking veicoli, detection e OCR delle targhe e lookup della classe Euro. YOLOv11s per i veicoli, modello dedicato per le targhe, OCR con fast-plate-ocr, tracking ByteTrack e voting pesato per consolidare le letture. Validazione su 205 veicoli.</p>
+                    <div class="project-tags">
+                        <span>YOLOv11</span>
+                        <span>Edge AI</span>
+                        <span>Hailo-8</span>
+                        <span>ByteTrack</span>
+                        <span>OCR</span>
+                    </div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-bullseye"></i> 89% rilevamento</span>
+                        <span><i class="fas fa-id-card"></i> 79% targhe</span>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal">
                     <div class="project-icon"><i class="fas fa-water"></i></div>
                     <h3>DELFI-HammerHead</h3>
-                    <p>Sistema embedded per il rilevamento acustico in tempo reale di delfini su Raspberry Pi Zero 2W. Classificazione on-device con TensorFlow Lite e stima direzionale TDOA. Dashboard di monitoraggio remoto in Flask.</p>
-                    <div class="project-tags">
+                    <p>Sistema embedded sviluppato nell'ambito del progetto europeo LIFE-DELFI (LabMACS, UNIVPM) per il rilevamento acustico in tempo reale di delfini su Raspberry Pi Zero 2W. Acquisizione stereo con HiFiBerry DAC+ ADC Pro, spectral gating nella banda 4–26 kHz, classificazione on-device con TensorFlow Lite e stima direzionale TDOA. Rilevamenti salvati con metadati JSON e audio WAV, dashboard di monitoraggio remoto in Flask.</p>                    <div class="project-tags">
                         <span>TensorFlow Lite</span>
                         <span>Raspberry Pi</span>
                         <span>Flask</span>
@@ -278,7 +297,7 @@
                 <div class="project-card reveal">
                     <div class="project-icon"><i class="fas fa-satellite"></i></div>
                     <h3>Rilevamento Imbarcazioni con AI Satellitare</h3>
-                    <p>Computer vision per sorveglianza marittima su immagini Sentinel-1 SAR e Sentinel-2 ottiche (~69.000 immagini). Replica dei risultati di Galdelli et al. (2025) con YOLOv10sLight, estensione con YOLOv11 e YOLOv12. YOLOv11m raggiunge AP50 0.851. Variante custom YOLOv12sLight con pruning della detection head.</p>
+                    <p>Computer vision per sorveglianza marittima su immagini Sentinel-1 SAR e Sentinel-2 ottiche (dataset HS3-S2, ~69.000 immagini da 6 fonti). Baseline YOLOv10sLight (AP50 0.831), estensione con YOLOv11 e YOLOv12: il modello migliore, YOLOv11m, raggiunge AP50 0.851 e AP50-95 0.548. Variante custom YOLOv12sLight con pruning della detection head: accuracy comparabile a YOLOv12s con meno GFLOPs.</p>
                     <div class="project-tags">
                         <span>YOLOv10</span>
                         <span>YOLOv11</span>
@@ -288,6 +307,7 @@
                     </div>
                     <div class="project-stats">
                         <span><i class="fas fa-bullseye"></i> AP50: 0.851</span>
+                        <span><i class="fas fa-crosshairs"></i> AP50-95: 0.548</span>
                         <span><i class="fas fa-images"></i> 69K immagini</span>
                     </div>
                     <a href="https://github.com/Bxster/Multimodal-AI-Ship-Detection" target="_blank" class="project-link"><i class="fab fa-github"></i> Vedi su GitHub</a>
@@ -296,7 +316,7 @@
                 <div class="project-card reveal">
                     <div class="project-icon"><i class="fas fa-rocket"></i></div>
                     <h3>Fault Detection & Manutenzione Predittiva</h3>
-                    <p>Diagnostica di guasti in sistemi propulsivi spaziali su dataset JAXA. DTW + 1-NN con regressione polinomiale di 4° grado: accuracy 100% in cross-validation su classificazione e localizzazione.</p>
+                    <p>PHM Asia Pacific 2023: diagnostica di guasti in sistemi propulsivi spaziali su dataset JAXA (177 casi di training, serie temporali a 1 kHz). Confronto di tre approcci: Random Forest + XGBoost su feature statistiche (score 88%), DTW + 1-NN sulla morfologia del segnale con regressione polinomiale di 4° grado (score 91.88%) e modello ibrido. L'approccio DTW raggiunge accuracy 100% in cross-validation su classificazione e localizzazione, con MAE ≈ 0% sulla stima dell'Opening Ratio.</p>
                     <div class="project-tags">
                         <span>Random Forest</span>
                         <span>XGBoost</span>
@@ -341,13 +361,17 @@
 
                 <div class="project-card reveal">
                     <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Architettura Zero Trust</h3>
-                    <p>Infrastruttura a microservizi sicura basata su paradigma ZTNA con autenticazione mTLS, autorizzazione OPA, proxying Envoy e monitoraggio SIEM.</p>
+                    <h3>Zero Trust Architecture con Rilevamento AI-driven</h3>
+                    <p>Architettura a microservizi conforme a NIST SP 800-207 per la gestione di un impianto nucleare (scenario). Envoy come PEP (mTLS, JA3 fingerprinting), Security Orchestrator in Go, OPA/Rego come PDP con controllo accessi Bell-LaPadula, IAM con login TPM e JWT, firewall nftables, IDS Snort e SIEM Splunk. Il rischio è valutato da Graphagate, un Temporal Graph Network (PyTorch Geometric) che modella ogni richiesta come catena source → JA3 → device → user → risorsa, con graph attention a 3 hop, scoring a doppia testa e un gate anti-poisoning: la memoria si aggiorna solo sugli accessi approvati da OPA.</p>
                     <div class="project-tags">
-                        <span>ZTNA</span>
-                        <span>mTLS</span>
-                        <span>OPA</span>
+                        <span>NIST 800-207</span>
                         <span>Envoy</span>
+                        <span>OPA / Rego</span>
+                        <span>Go</span>
+                        <span>Snort</span>
+                        <span>Splunk</span>
+                        <span>TGN</span>
+                        <span>PyTorch Geometric</span>
                     </div>
                 </div>
 
